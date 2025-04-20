@@ -1,0 +1,3178 @@
+[gd_scene load_steps=41 format=3 uid="uid://p0anqmi4dku"]
+
+[ext_resource type="Script" uid="uid://c87lukbahtsp8" path="res://scripts/ship.gd" id="1_4cq66"]
+[ext_resource type="Texture2D" uid="uid://cktvbh7hxtf7l" path="res://sprites/cling1.png" id="2_3m36u"]
+[ext_resource type="Shader" uid="uid://bhj26g88m0akg" path="res://addons/eye_dropper/eye_dropper.gdshader" id="2_8qiel"]
+[ext_resource type="Texture2D" uid="uid://b3n5oew3rlo00" path="res://sprites/cling2.png" id="3_8qiel"]
+[ext_resource type="Texture2D" uid="uid://dc12tqv8jxa8b" path="res://sprites/lay1.png" id="4_itrim"]
+[ext_resource type="Texture2D" uid="uid://c4356g51aqw2y" path="res://sprites/lay2.png" id="5_bseor"]
+[ext_resource type="Texture2D" uid="uid://dqw4r5yenpear" path="res://sprites/sit1.png" id="6_tlr80"]
+[ext_resource type="Texture2D" uid="uid://cva34mg8a7xh4" path="res://sprites/sit2.png" id="7_03y04"]
+[ext_resource type="Texture2D" uid="uid://b0hubb3febyup" path="res://sprites/luffy1.png" id="9_bseor"]
+[ext_resource type="Texture2D" uid="uid://dyleeo3l4xy8r" path="res://sprites/luffy2.png" id="10_tlr80"]
+
+[sub_resource type="Animation" id="Animation_itrim"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("animPlay/RigidBody2D20:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("animPlay/RigidBody2D1:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("animPlay/RigidBody2D2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("animPlay/RigidBody2D3:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("animPlay/RigidBody2D4:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("animPlay/RigidBody2D5:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("animPlay/RigidBody2D6:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("animPlay/RigidBody2D7:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("animPlay/RigidBody2D8:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("animPlay/RigidBody2D9:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("animPlay/RigidBody2D10:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("animPlay/RigidBody2D11:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("animPlay/RigidBody2D12:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("animPlay/RigidBody2D13:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("animPlay/RigidBody2D14:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("animPlay/RigidBody2D15:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("animPlay/RigidBody2D16:position")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("animPlay/RigidBody2D17:position")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("animPlay/RigidBody2D18:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("animPlay/RigidBody2D19:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-162, 514)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("animPlay/RigidBody2D20:rotation")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("animPlay/RigidBody2D1:rotation")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("animPlay/RigidBody2D2:rotation")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("animPlay/RigidBody2D3:rotation")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("animPlay/RigidBody2D4:rotation")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("animPlay/RigidBody2D5:rotation")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("animPlay/RigidBody2D6:rotation")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("animPlay/RigidBody2D7:rotation")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("animPlay/RigidBody2D8:rotation")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("animPlay/RigidBody2D9:rotation")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("animPlay/RigidBody2D10:rotation")
+tracks/30/interp = 1
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("animPlay/RigidBody2D11:rotation")
+tracks/31/interp = 1
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("animPlay/RigidBody2D12:rotation")
+tracks/32/interp = 1
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("animPlay/RigidBody2D13:rotation")
+tracks/33/interp = 1
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("animPlay/RigidBody2D14:rotation")
+tracks/34/interp = 1
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("animPlay/RigidBody2D15:rotation")
+tracks/35/interp = 1
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("animPlay/RigidBody2D16:rotation")
+tracks/36/interp = 1
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("animPlay/RigidBody2D17:rotation")
+tracks/37/interp = 1
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("animPlay/RigidBody2D18:rotation")
+tracks/38/interp = 1
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("animPlay/RigidBody2D19:rotation")
+tracks/39/interp = 1
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("animPlay/AnimatedSprite2D:position")
+tracks/40/interp = 1
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(568, 414)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("animPlay/AnimatedSprite2D:rotation")
+tracks/41/interp = 1
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_8qiel"]
+resource_name = "floatin"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("animPlay/RigidBody2D20:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("animPlay/RigidBody2D1:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("animPlay/RigidBody2D2:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("animPlay/RigidBody2D3:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("animPlay/RigidBody2D4:position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("animPlay/RigidBody2D5:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("animPlay/RigidBody2D6:position")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("animPlay/RigidBody2D7:position")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("animPlay/RigidBody2D8:position")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("animPlay/RigidBody2D9:position")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("animPlay/RigidBody2D10:position")
+tracks/10/interp = 2
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("animPlay/RigidBody2D11:position")
+tracks/11/interp = 2
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("animPlay/RigidBody2D12:position")
+tracks/12/interp = 2
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("animPlay/RigidBody2D13:position")
+tracks/13/interp = 2
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("animPlay/RigidBody2D14:position")
+tracks/14/interp = 2
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("animPlay/RigidBody2D15:position")
+tracks/15/interp = 2
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("animPlay/RigidBody2D16:position")
+tracks/16/interp = 2
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("animPlay/RigidBody2D17:position")
+tracks/17/interp = 2
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("animPlay/RigidBody2D18:position")
+tracks/18/interp = 2
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("animPlay/RigidBody2D19:position")
+tracks/19/interp = 2
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 0.933333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(565, 503)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("animPlay/RigidBody2D20:rotation")
+tracks/20/interp = 2
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("animPlay/RigidBody2D1:rotation")
+tracks/21/interp = 2
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("animPlay/RigidBody2D2:rotation")
+tracks/22/interp = 2
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("animPlay/RigidBody2D3:rotation")
+tracks/23/interp = 2
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("animPlay/RigidBody2D4:rotation")
+tracks/24/interp = 2
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("animPlay/RigidBody2D5:rotation")
+tracks/25/interp = 2
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("animPlay/RigidBody2D6:rotation")
+tracks/26/interp = 2
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("animPlay/RigidBody2D7:rotation")
+tracks/27/interp = 2
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("animPlay/RigidBody2D8:rotation")
+tracks/28/interp = 2
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("animPlay/RigidBody2D9:rotation")
+tracks/29/interp = 2
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("animPlay/RigidBody2D10:rotation")
+tracks/30/interp = 2
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("animPlay/RigidBody2D11:rotation")
+tracks/31/interp = 2
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("animPlay/RigidBody2D12:rotation")
+tracks/32/interp = 2
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("animPlay/RigidBody2D13:rotation")
+tracks/33/interp = 2
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("animPlay/RigidBody2D14:rotation")
+tracks/34/interp = 2
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("animPlay/RigidBody2D15:rotation")
+tracks/35/interp = 2
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("animPlay/RigidBody2D16:rotation")
+tracks/36/interp = 2
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("animPlay/RigidBody2D17:rotation")
+tracks/37/interp = 2
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("animPlay/RigidBody2D18:rotation")
+tracks/38/interp = 2
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("animPlay/RigidBody2D19:rotation")
+tracks/39/interp = 2
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0, 0.42, 0.933333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("animPlay/AnimatedSprite2D:position")
+tracks/40/interp = 2
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0, 0.94),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-185, 424), Vector2(556, 404)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("animPlay/AnimatedSprite2D:rotation")
+tracks/41/interp = 2
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0, 0.43, 0.94),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.211185, -0.185005, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_tlr80"]
+resource_name = "floatinland"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("animPlay/RigidBody2D20:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("animPlay/RigidBody2D1:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("animPlay/RigidBody2D2:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("animPlay/RigidBody2D3:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("animPlay/RigidBody2D4:position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("animPlay/RigidBody2D5:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("animPlay/RigidBody2D6:position")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("animPlay/RigidBody2D7:position")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("animPlay/RigidBody2D8:position")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("animPlay/RigidBody2D9:position")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("animPlay/RigidBody2D10:position")
+tracks/10/interp = 2
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("animPlay/RigidBody2D11:position")
+tracks/11/interp = 2
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("animPlay/RigidBody2D12:position")
+tracks/12/interp = 2
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("animPlay/RigidBody2D13:position")
+tracks/13/interp = 2
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("animPlay/RigidBody2D14:position")
+tracks/14/interp = 2
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("animPlay/RigidBody2D15:position")
+tracks/15/interp = 2
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("animPlay/RigidBody2D16:position")
+tracks/16/interp = 2
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("animPlay/RigidBody2D17:position")
+tracks/17/interp = 2
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("animPlay/RigidBody2D18:position")
+tracks/18/interp = 2
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("animPlay/RigidBody2D19:position")
+tracks/19/interp = 2
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-162, 514), Vector2(942, 503)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("animPlay/RigidBody2D20:rotation")
+tracks/20/interp = 2
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("animPlay/RigidBody2D1:rotation")
+tracks/21/interp = 2
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("animPlay/RigidBody2D2:rotation")
+tracks/22/interp = 2
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("animPlay/RigidBody2D3:rotation")
+tracks/23/interp = 2
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("animPlay/RigidBody2D4:rotation")
+tracks/24/interp = 2
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("animPlay/RigidBody2D5:rotation")
+tracks/25/interp = 2
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("animPlay/RigidBody2D6:rotation")
+tracks/26/interp = 2
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("animPlay/RigidBody2D7:rotation")
+tracks/27/interp = 2
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("animPlay/RigidBody2D8:rotation")
+tracks/28/interp = 2
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("animPlay/RigidBody2D9:rotation")
+tracks/29/interp = 2
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("animPlay/RigidBody2D10:rotation")
+tracks/30/interp = 2
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("animPlay/RigidBody2D11:rotation")
+tracks/31/interp = 2
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("animPlay/RigidBody2D12:rotation")
+tracks/32/interp = 2
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("animPlay/RigidBody2D13:rotation")
+tracks/33/interp = 2
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("animPlay/RigidBody2D14:rotation")
+tracks/34/interp = 2
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("animPlay/RigidBody2D15:rotation")
+tracks/35/interp = 2
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("animPlay/RigidBody2D16:rotation")
+tracks/36/interp = 2
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("animPlay/RigidBody2D17:rotation")
+tracks/37/interp = 2
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("animPlay/RigidBody2D18:rotation")
+tracks/38/interp = 2
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("animPlay/RigidBody2D19:rotation")
+tracks/39/interp = 2
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0, 0.666667, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.42237, -0.221657, 0.0]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("animPlay/AnimatedSprite2D:rotation")
+tracks/40/interp = 2
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0, 0.68, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.20944, -0.1309, 0.0]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("animPlay/AnimatedSprite2D:position")
+tracks/41/interp = 2
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-190, 423), Vector2(931, 405)]
+}
+
+[sub_resource type="Animation" id="Animation_bseor"]
+resource_name = "wave"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("animPlay/RigidBody2D20:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("animPlay/RigidBody2D1:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("animPlay/RigidBody2D2:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("animPlay/RigidBody2D3:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("animPlay/RigidBody2D4:position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("animPlay/RigidBody2D5:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("animPlay/RigidBody2D6:position")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("animPlay/RigidBody2D7:position")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("animPlay/RigidBody2D8:position")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("animPlay/RigidBody2D9:position")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("animPlay/RigidBody2D10:position")
+tracks/10/interp = 2
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("animPlay/RigidBody2D11:position")
+tracks/11/interp = 2
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("animPlay/RigidBody2D12:position")
+tracks/12/interp = 2
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("animPlay/RigidBody2D13:position")
+tracks/13/interp = 2
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("animPlay/RigidBody2D14:position")
+tracks/14/interp = 2
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("animPlay/RigidBody2D15:position")
+tracks/15/interp = 2
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("animPlay/RigidBody2D16:position")
+tracks/16/interp = 2
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("animPlay/RigidBody2D17:position")
+tracks/17/interp = 2
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("animPlay/RigidBody2D18:position")
+tracks/18/interp = 2
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("animPlay/RigidBody2D19:position")
+tracks/19/interp = 2
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 1.59, 3.51),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(566, 514), Vector2(566, 470), Vector2(566, 558)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("animPlay/RigidBody2D20:rotation")
+tracks/20/interp = 2
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("animPlay/RigidBody2D1:rotation")
+tracks/21/interp = 2
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("animPlay/RigidBody2D2:rotation")
+tracks/22/interp = 2
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("animPlay/RigidBody2D3:rotation")
+tracks/23/interp = 2
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("animPlay/RigidBody2D4:rotation")
+tracks/24/interp = 2
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("animPlay/RigidBody2D5:rotation")
+tracks/25/interp = 2
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("animPlay/RigidBody2D6:rotation")
+tracks/26/interp = 2
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("animPlay/RigidBody2D7:rotation")
+tracks/27/interp = 2
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("animPlay/RigidBody2D8:rotation")
+tracks/28/interp = 2
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("animPlay/RigidBody2D9:rotation")
+tracks/29/interp = 2
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("animPlay/RigidBody2D10:rotation")
+tracks/30/interp = 2
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("animPlay/RigidBody2D11:rotation")
+tracks/31/interp = 2
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("animPlay/RigidBody2D12:rotation")
+tracks/32/interp = 2
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("animPlay/RigidBody2D13:rotation")
+tracks/33/interp = 2
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("animPlay/RigidBody2D14:rotation")
+tracks/34/interp = 2
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("animPlay/RigidBody2D15:rotation")
+tracks/35/interp = 2
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("animPlay/RigidBody2D16:rotation")
+tracks/36/interp = 2
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("animPlay/RigidBody2D17:rotation")
+tracks/37/interp = 2
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("animPlay/RigidBody2D18:rotation")
+tracks/38/interp = 2
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("animPlay/RigidBody2D19:rotation")
+tracks/39/interp = 2
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("animPlay/AnimatedSprite2D:position")
+tracks/40/interp = 2
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.55),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(568, 414), Vector2(568, 374.59), Vector2(568, 462)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("animPlay/AnimatedSprite2D:rotation")
+tracks/41/interp = 2
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0, 0.87, 2.61),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.0698132, 0.218166]
+}
+
+[sub_resource type="Animation" id="Animation_03y04"]
+resource_name = "waveland"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("animPlay/RigidBody2D20:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("animPlay/RigidBody2D1:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("animPlay/RigidBody2D2:position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("animPlay/RigidBody2D3:position")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("animPlay/RigidBody2D4:position")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("animPlay/RigidBody2D5:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("animPlay/RigidBody2D6:position")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("animPlay/RigidBody2D7:position")
+tracks/7/interp = 2
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("animPlay/RigidBody2D8:position")
+tracks/8/interp = 2
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("animPlay/RigidBody2D9:position")
+tracks/9/interp = 2
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("animPlay/RigidBody2D10:position")
+tracks/10/interp = 2
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("animPlay/RigidBody2D11:position")
+tracks/11/interp = 2
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("animPlay/RigidBody2D12:position")
+tracks/12/interp = 2
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("animPlay/RigidBody2D13:position")
+tracks/13/interp = 2
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("animPlay/RigidBody2D14:position")
+tracks/14/interp = 2
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("animPlay/RigidBody2D15:position")
+tracks/15/interp = 2
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("animPlay/RigidBody2D16:position")
+tracks/16/interp = 2
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("animPlay/RigidBody2D17:position")
+tracks/17/interp = 2
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("animPlay/RigidBody2D18:position")
+tracks/18/interp = 2
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("animPlay/RigidBody2D19:position")
+tracks/19/interp = 2
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0, 1.6, 3.53),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(955, 514), Vector2(965, 470), Vector2(960, 558.186)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("animPlay/RigidBody2D20:rotation")
+tracks/20/interp = 2
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("animPlay/RigidBody2D1:rotation")
+tracks/21/interp = 2
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("animPlay/RigidBody2D2:rotation")
+tracks/22/interp = 2
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("animPlay/RigidBody2D3:rotation")
+tracks/23/interp = 2
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("animPlay/RigidBody2D4:rotation")
+tracks/24/interp = 2
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("animPlay/RigidBody2D5:rotation")
+tracks/25/interp = 2
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("animPlay/RigidBody2D6:rotation")
+tracks/26/interp = 2
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/27/type = "value"
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/path = NodePath("animPlay/RigidBody2D7:rotation")
+tracks/27/interp = 2
+tracks/27/loop_wrap = true
+tracks/27/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/28/type = "value"
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/path = NodePath("animPlay/RigidBody2D8:rotation")
+tracks/28/interp = 2
+tracks/28/loop_wrap = true
+tracks/28/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/29/type = "value"
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/path = NodePath("animPlay/RigidBody2D9:rotation")
+tracks/29/interp = 2
+tracks/29/loop_wrap = true
+tracks/29/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/30/type = "value"
+tracks/30/imported = false
+tracks/30/enabled = true
+tracks/30/path = NodePath("animPlay/RigidBody2D10:rotation")
+tracks/30/interp = 2
+tracks/30/loop_wrap = true
+tracks/30/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/31/type = "value"
+tracks/31/imported = false
+tracks/31/enabled = true
+tracks/31/path = NodePath("animPlay/RigidBody2D11:rotation")
+tracks/31/interp = 2
+tracks/31/loop_wrap = true
+tracks/31/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/32/type = "value"
+tracks/32/imported = false
+tracks/32/enabled = true
+tracks/32/path = NodePath("animPlay/RigidBody2D12:rotation")
+tracks/32/interp = 2
+tracks/32/loop_wrap = true
+tracks/32/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/33/type = "value"
+tracks/33/imported = false
+tracks/33/enabled = true
+tracks/33/path = NodePath("animPlay/RigidBody2D13:rotation")
+tracks/33/interp = 2
+tracks/33/loop_wrap = true
+tracks/33/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/34/type = "value"
+tracks/34/imported = false
+tracks/34/enabled = true
+tracks/34/path = NodePath("animPlay/RigidBody2D14:rotation")
+tracks/34/interp = 2
+tracks/34/loop_wrap = true
+tracks/34/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/35/type = "value"
+tracks/35/imported = false
+tracks/35/enabled = true
+tracks/35/path = NodePath("animPlay/RigidBody2D15:rotation")
+tracks/35/interp = 2
+tracks/35/loop_wrap = true
+tracks/35/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/36/type = "value"
+tracks/36/imported = false
+tracks/36/enabled = true
+tracks/36/path = NodePath("animPlay/RigidBody2D16:rotation")
+tracks/36/interp = 2
+tracks/36/loop_wrap = true
+tracks/36/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/37/type = "value"
+tracks/37/imported = false
+tracks/37/enabled = true
+tracks/37/path = NodePath("animPlay/RigidBody2D17:rotation")
+tracks/37/interp = 2
+tracks/37/loop_wrap = true
+tracks/37/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/38/type = "value"
+tracks/38/imported = false
+tracks/38/enabled = true
+tracks/38/path = NodePath("animPlay/RigidBody2D18:rotation")
+tracks/38/interp = 2
+tracks/38/loop_wrap = true
+tracks/38/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/39/type = "value"
+tracks/39/imported = false
+tracks/39/enabled = true
+tracks/39/path = NodePath("animPlay/RigidBody2D19:rotation")
+tracks/39/interp = 2
+tracks/39/loop_wrap = true
+tracks/39/keys = {
+"times": PackedFloat32Array(0, 0.83, 2.59),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.122173, 0.185005]
+}
+tracks/40/type = "value"
+tracks/40/imported = false
+tracks/40/enabled = true
+tracks/40/path = NodePath("animPlay/AnimatedSprite2D:position")
+tracks/40/interp = 2
+tracks/40/loop_wrap = true
+tracks/40/keys = {
+"times": PackedFloat32Array(0, 1.63, 3.55),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(950, 416), Vector2(941, 372.84), Vector2(966, 463)]
+}
+tracks/41/type = "value"
+tracks/41/imported = false
+tracks/41/enabled = true
+tracks/41/path = NodePath("animPlay/AnimatedSprite2D:rotation")
+tracks/41/interp = 2
+tracks/41/loop_wrap = true
+tracks/41/keys = {
+"times": PackedFloat32Array(0, 0.85, 2.62),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, -0.113446, 0.193732]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bseor"]
+_data = {
+&"RESET": SubResource("Animation_itrim"),
+&"floatin": SubResource("Animation_8qiel"),
+&"floatinland": SubResource("Animation_tlr80"),
+&"wave": SubResource("Animation_bseor"),
+&"waveland": SubResource("Animation_03y04")
+}
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_8qiel"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8qiel"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8qiel"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_48mkp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_3m36u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8qiel")
+}],
+"loop": true,
+"name": &"cling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_itrim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bseor")
+}],
+"loop": true,
+"name": &"lay",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_tlr80")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_03y04")
+}],
+"loop": true,
+"name": &"sit",
+"speed": 5.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_itrim"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bseor"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tlr80"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_03y04"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_48mkp"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tbq4g"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mx31c"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fs4we"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vbj2c"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dschd"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_83dbu"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xifwb"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_swuwe"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6vtx4"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r5rhe"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862091, 0.862091, 0.862091, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nwefg"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862745, 0.862745, 0.862745, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_08ed0"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862745, 0.862745, 0.862745, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7tpya"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862745, 0.862745, 0.862745, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q0sdf"]
+shader = ExtResource("2_8qiel")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.862745, 0.862745, 0.862745, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_03y04"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_bseor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tlr80")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Ship" type="Node2D"]
+script = ExtResource("1_4cq66")
+
+[node name="animPlay" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_bseor")
+}
+blend_times = [&"floatin", &"wave", 0.2, &"floatinland", &"waveland", 0.2, &"waveland", &"wave", 0.5]
+
+[node name="RigidBody2D1" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D1"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john1" type="AnimatedSprite2D" parent="animPlay/RigidBody2D1"]
+visible = false
+material = SubResource("ShaderMaterial_8qiel")
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"lay"
+autoplay = "lay"
+frame_progress = 0.0827997
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D2"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john2" type="AnimatedSprite2D" parent="animPlay/RigidBody2D2"]
+visible = false
+material = SubResource("ShaderMaterial_itrim")
+position = Vector2(78, -19)
+rotation = 0.209193
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"sit"
+autoplay = "sit"
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D3"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john3" type="AnimatedSprite2D" parent="animPlay/RigidBody2D3"]
+visible = false
+material = SubResource("ShaderMaterial_bseor")
+position = Vector2(-72, -9)
+rotation = 1.80166
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"cling"
+autoplay = "cling"
+
+[node name="RigidBody2D4" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D4"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john4" type="AnimatedSprite2D" parent="animPlay/RigidBody2D4"]
+visible = false
+material = SubResource("ShaderMaterial_tlr80")
+position = Vector2(-130, -63)
+rotation = -1.59168
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"lay"
+autoplay = "lay"
+frame_progress = 0.444383
+
+[node name="RigidBody2D5" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D5"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john5" type="AnimatedSprite2D" parent="animPlay/RigidBody2D5"]
+visible = false
+z_index = 10
+material = SubResource("ShaderMaterial_03y04")
+position = Vector2(97, -76)
+rotation = 2.95276
+scale = Vector2(0.3, -0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"cling"
+autoplay = "cling"
+
+[node name="RigidBody2D6" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D6"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john6" type="AnimatedSprite2D" parent="animPlay/RigidBody2D6"]
+visible = false
+material = SubResource("ShaderMaterial_48mkp")
+position = Vector2(-142, -135)
+rotation = -1.57306
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"sit"
+autoplay = "sit"
+
+[node name="RigidBody2D7" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D7"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john7" type="AnimatedSprite2D" parent="animPlay/RigidBody2D7"]
+visible = false
+material = SubResource("ShaderMaterial_tbq4g")
+position = Vector2(146, -73)
+rotation = 1.80166
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"lay"
+autoplay = "lay"
+
+[node name="RigidBody2D8" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D8"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john8" type="AnimatedSprite2D" parent="animPlay/RigidBody2D8"]
+visible = false
+material = SubResource("ShaderMaterial_mx31c")
+position = Vector2(-125, -59)
+rotation = 0.13593
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"cling"
+autoplay = "cling"
+
+[node name="RigidBody2D9" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D9"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john9" type="AnimatedSprite2D" parent="animPlay/RigidBody2D9"]
+visible = false
+material = SubResource("ShaderMaterial_fs4we")
+position = Vector2(129, -3)
+rotation = 1.12069
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"sit"
+autoplay = "sit"
+
+[node name="RigidBody2D10" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D10"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john10" type="AnimatedSprite2D" parent="animPlay/RigidBody2D10"]
+visible = false
+z_index = -30
+material = SubResource("ShaderMaterial_vbj2c")
+position = Vector2(-164, -54)
+rotation = 0.680867
+scale = Vector2(0.3, -0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"lay"
+autoplay = "lay"
+
+[node name="RigidBody2D11" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D11"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john11" type="AnimatedSprite2D" parent="animPlay/RigidBody2D11"]
+visible = false
+material = SubResource("ShaderMaterial_dschd")
+position = Vector2(167, -142)
+rotation = -2.62487
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"cling"
+autoplay = "cling"
+
+[node name="RigidBody2D12" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D12"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john12" type="AnimatedSprite2D" parent="animPlay/RigidBody2D12"]
+visible = false
+material = SubResource("ShaderMaterial_83dbu")
+position = Vector2(-138, -16)
+rotation = -0.682153
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"cling"
+autoplay = "cling"
+
+[node name="RigidBody2D13" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D13"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john13" type="AnimatedSprite2D" parent="animPlay/RigidBody2D13"]
+visible = false
+material = SubResource("ShaderMaterial_xifwb")
+position = Vector2(201, -87)
+rotation = 2.46413
+scale = Vector2(0.3, -0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"lay"
+autoplay = "lay"
+
+[node name="RigidBody2D14" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D14"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john14" type="AnimatedSprite2D" parent="animPlay/RigidBody2D14"]
+visible = false
+material = SubResource("ShaderMaterial_swuwe")
+position = Vector2(-147, -188)
+rotation = 3.13604
+scale = Vector2(0.3, -0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"sit"
+autoplay = "sit"
+
+[node name="RigidBody2D15" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D15"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john15" type="AnimatedSprite2D" parent="animPlay/RigidBody2D15"]
+visible = false
+material = SubResource("ShaderMaterial_6vtx4")
+position = Vector2(144, -186)
+rotation = 3.13604
+scale = Vector2(0.3, -0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"sit"
+autoplay = "sit"
+
+[node name="RigidBody2D16" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D16"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john16" type="AnimatedSprite2D" parent="animPlay/RigidBody2D16"]
+visible = false
+material = SubResource("ShaderMaterial_r5rhe")
+position = Vector2(-237, -137)
+rotation = 2.17017
+scale = Vector2(0.3, -0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"lay"
+autoplay = "cling"
+
+[node name="RigidBody2D17" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D17"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john17" type="AnimatedSprite2D" parent="animPlay/RigidBody2D17"]
+visible = false
+z_index = -305
+material = SubResource("ShaderMaterial_nwefg")
+position = Vector2(-21, -167)
+rotation = 1.65374
+scale = Vector2(0.3, -0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"lay"
+autoplay = "lay"
+
+[node name="RigidBody2D18" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D18"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john18" type="AnimatedSprite2D" parent="animPlay/RigidBody2D18"]
+visible = false
+z_index = -305
+material = SubResource("ShaderMaterial_08ed0")
+position = Vector2(-20, -371)
+rotation = 1.39965
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"lay"
+autoplay = "lay"
+
+[node name="RigidBody2D19" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D19"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john19" type="AnimatedSprite2D" parent="animPlay/RigidBody2D19"]
+visible = false
+z_index = -305
+material = SubResource("ShaderMaterial_7tpya")
+position = Vector2(-38, -435)
+rotation = 0.0243627
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"cling"
+autoplay = "cling"
+
+[node name="RigidBody2D20" type="RigidBody2D" parent="animPlay"]
+position = Vector2(-162, 514)
+physics_material_override = SubResource("PhysicsMaterial_8qiel")
+freeze = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="animPlay/RigidBody2D20"]
+position = Vector2(140, -73.3333)
+scale = Vector2(0.3, 0.3)
+shape = SubResource("CircleShape2D_8qiel")
+disabled = true
+
+[node name="john20" type="AnimatedSprite2D" parent="animPlay/RigidBody2D20"]
+visible = false
+z_index = -305
+material = SubResource("ShaderMaterial_q0sdf")
+position = Vector2(-21, -417)
+rotation = -3.11723
+scale = Vector2(0.3, -0.3)
+sprite_frames = SubResource("SpriteFrames_48mkp")
+animation = &"cling"
+autoplay = "cling"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="animPlay"]
+position = Vector2(568, 414)
+scale = Vector2(0.277729, 0.277729)
+sprite_frames = SubResource("SpriteFrames_03y04")
+autoplay = "default"
+frame_progress = 0.945736
+
+[connection signal="animation_finished" from="animPlay" to="." method="_on_anim_play_animation_finished"]

@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://dnl1bw1303qov"]
+
+[ext_resource type="PackedScene" uid="uid://p0anqmi4dku" path="res://scenes/ship.tscn" id="1_7i2eo"]
+[ext_resource type="PackedScene" uid="uid://cxvrxxmrtsh0y" path="res://scenes/gameover.tscn" id="2_a1ohp"]
+[ext_resource type="Texture2D" uid="uid://b5jdv418juh17" path="res://sprites/sky.png" id="4_a1ohp"]
+[ext_resource type="Texture2D" uid="uid://q3dj3jfghw0r" path="res://sprites/island.png" id="5_ogne1"]
+
+[node name="Ocean" type="Node2D"]
+
+[node name="Ship" parent="." instance=ExtResource("1_7i2eo")]
+position = Vector2(88, 24)
+
+[node name="Timer" type="Timer" parent="Ship"]
+wait_time = 20.0
+autostart = true
+
+[node name="actionTimer" type="Timer" parent="Ship"]
+wait_time = 4.0
+one_shot = true
+autostart = true
+
+[node name="Gameover" parent="Ship" instance=ExtResource("2_a1ohp")]
+position = Vector2(488, 952)
+
+[node name="sky" type="Sprite2D" parent="."]
+z_index = -700
+position = Vector2(512, 336)
+scale = Vector2(0.501017, 0.501017)
+texture = ExtResource("4_a1ohp")
+
+[node name="sky2" type="Sprite2D" parent="."]
+z_index = -4096
+position = Vector2(2032, 344)
+scale = Vector2(0.713228, 0.713228)
+texture = ExtResource("4_a1ohp")
+
+[node name="land" type="Sprite2D" parent="."]
+z_index = -270
+position = Vector2(2056, 232)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("5_ogne1")
+
+[connection signal="timeout" from="Ship/Timer" to="Ship" method="_on_timer_timeout"]
+[connection signal="timeout" from="Ship/actionTimer" to="Ship" method="_on_action_timer_timeout"]

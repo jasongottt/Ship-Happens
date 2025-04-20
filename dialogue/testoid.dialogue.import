@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c7rhyh2f2n2gb"
+path="res://.godot/imported/testoid.dialogue-a5d0d2c0ce66a6d5370d5a86c3a88b62.tres"
+
+[deps]
+
+source_file="res://dialogue/testoid.dialogue"
+dest_files=["res://.godot/imported/testoid.dialogue-a5d0d2c0ce66a6d5370d5a86c3a88b62.tres"]
+
+[params]
+
+defaults=true

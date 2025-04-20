@@ -1,0 +1,202 @@
+[gd_scene load_steps=9 format=3 uid="uid://dmc781g3yca1d"]
+
+[ext_resource type="Texture2D" uid="uid://ur8bev5n2nyh" path="res://sprites/sea1.png" id="1_s3811"]
+[ext_resource type="Texture2D" uid="uid://8xdcojvpr8nw" path="res://sprites/sea2.png" id="2_p1n2c"]
+
+[sub_resource type="Animation" id="Animation_ogne1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../water2:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(640, 208)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(640, 280)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../water3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(640, 340.097)]
+}
+
+[sub_resource type="Animation" id="Animation_vjho5"]
+resource_name = "wave2"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../water2:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.58, 3.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1000, 208), Vector2(1000, 222.325), Vector2(1000, 197.47)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.53333, 3.36),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1000, 276.73), Vector2(1000, 309.655), Vector2(1000, 312.11)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../water3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.62, 3.35),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1000, 254.295), Vector2(1000, 257.26), Vector2(1000, 261.375)]
+}
+
+[sub_resource type="Animation" id="Animation_p7dfi"]
+resource_name = "wave2_2"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../water2:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.58, 3.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(2216.81, 208), Vector2(2216.81, 255.64), Vector2(2216.81, 225.43)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.56, 3.36),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(2216.81, 299.17), Vector2(2216.81, 222.62), Vector2(2216.81, 340.955)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../water3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.62, 3.35),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(2216.81, 260), Vector2(2216.81, 288), Vector2(2216.81, 261.375)]
+}
+
+[sub_resource type="Animation" id="Animation_a1ohp"]
+resource_name = "wavewat"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(640, 136)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vjho5"]
+_data = {
+&"RESET": SubResource("Animation_ogne1"),
+&"wave2": SubResource("Animation_vjho5"),
+&"wave2_2": SubResource("Animation_p7dfi"),
+&"wavewat": SubResource("Animation_a1ohp")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ogne1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s3811")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_p1n2c")
+}],
+"loop": true,
+"name": &"wobble",
+"speed": 2.0
+}]
+
+[node name="AnimationPlayer2" type="AnimationPlayer"]
+root_node = NodePath("water")
+libraries = {
+&"": SubResource("AnimationLibrary_vjho5")
+}
+autoplay = "wave2"
+
+[node name="water" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.678431)
+z_index = 655
+position = Vector2(640, 280)
+scale = Vector2(0.616, 0.616)
+sprite_frames = SubResource("SpriteFrames_ogne1")
+animation = &"wobble"
+autoplay = "wobble"
+frame_progress = 0.172661
+
+[node name="water3" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.772549, 0.862745, 0.913725, 0.858824)
+z_index = -300
+position = Vector2(640, 340.097)
+scale = Vector2(0.616, 0.616)
+sprite_frames = SubResource("SpriteFrames_ogne1")
+animation = &"wobble"
+autoplay = "wobble"
+frame_progress = 0.172661
+speed_scale = 1.5
+
+[node name="water2" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.573244, 0.775076, 0.801939, 1)
+z_index = -525
+position = Vector2(640, 208)
+scale = Vector2(0.616, 0.616)
+sprite_frames = SubResource("SpriteFrames_ogne1")
+animation = &"wobble"
+autoplay = "wobble"
+frame = 1

@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://cyhmowampqdwj"]
+
+[ext_resource type="Script" uid="uid://byv8hi1v0p8l6" path="res://scripts/guy.gd" id="1_6b1ya"]
+[ext_resource type="Texture2D" uid="uid://qm18j5vu30x1" path="res://sprites/test.png" id="2_daf80"]
+
+[sub_resource type="Curve2D" id="Curve2D_gt8d0"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2700, 0, 0, 0, 0, 0, 2611.86, -556.138, 0, 0, 0, 0, 3212.69, -258.207, -536.637, -8.86267, 536.637, 8.86267, 3788.69, -1161.93, 0, 0, 0, 0, 4235.58, 754.758)
+}
+point_count = 6
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0iamf"]
+size = Vector2(1107.31, 1142.07)
+
+[node name="Path2D" type="Path2D"]
+scale = Vector2(0.201389, 0.201389)
+curve = SubResource("Curve2D_gt8d0")
+script = ExtResource("1_6b1ya")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+rotates = false
+loop = false
+
+[node name="guy1" type="Sprite2D" parent="PathFollow2D"]
+texture = ExtResource("2_daf80")
+
+[node name="Area2D" type="Area2D" parent="PathFollow2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/Area2D"]
+position = Vector2(-27.3102, -44.6896)
+shape = SubResource("RectangleShape2D_0iamf")
+
+[connection signal="input_event" from="PathFollow2D/Area2D" to="." method="_on_area_2d_input_event"]

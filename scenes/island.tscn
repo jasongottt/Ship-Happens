@@ -1,0 +1,454 @@
+[gd_scene load_steps=23 format=3 uid="uid://c8465pl6amiel"]
+
+[ext_resource type="Script" uid="uid://byv8hi1v0p8l6" path="res://scripts/guy.gd" id="2_cngje"]
+[ext_resource type="Texture2D" uid="uid://cquqhpa14fsf3" path="res://sprites/guyjump1.png" id="3_migvp"]
+[ext_resource type="PackedScene" uid="uid://p0anqmi4dku" path="res://scenes/ship.tscn" id="4_ftju0"]
+[ext_resource type="Texture2D" uid="uid://bykab8b6wwxo5" path="res://sprites/guyrun/guyrun1.png" id="4_perh5"]
+[ext_resource type="Texture2D" uid="uid://dxchlsx5p48q1" path="res://sprites/guyrun/guyrun2.png" id="5_qtqbj"]
+[ext_resource type="Texture2D" uid="uid://ds441nintn34v" path="res://sprites/guyrun/guyrun3.png" id="6_p7dfi"]
+[ext_resource type="Texture2D" uid="uid://hi60etfeet3l" path="res://sprites/guystand1.png" id="7_8ke6f"]
+[ext_resource type="Texture2D" uid="uid://cxoanmnh5p7ql" path="res://sprites/guystand2.png" id="8_irydw"]
+[ext_resource type="Shader" uid="uid://bhj26g88m0akg" path="res://addons/eye_dropper/eye_dropper.gdshader" id="8_migvp"]
+[ext_resource type="Texture2D" uid="uid://q3dj3jfghw0r" path="res://sprites/island.png" id="9_perh5"]
+[ext_resource type="Texture2D" uid="uid://d2ipmcilrr47b" path="res://sprites/smalbub.png" id="9_qtqbj"]
+[ext_resource type="Texture2D" uid="uid://dpvwt1tlnn066" path="res://sprites/response.png" id="10_p7dfi"]
+[ext_resource type="Texture2D" uid="uid://b5jdv418juh17" path="res://sprites/sky.png" id="13_p7dfi"]
+
+[sub_resource type="Curve2D" id="Curve2D_cngje"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1137.1, 19.8621, -536.637, -8.86267, 536.637, 8.86267, 1820.41, -604.551, 0, 0, 0, 0, 2316.96, 785.793)
+}
+point_count = 4
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_perh5"]
+shader = ExtResource("8_migvp")
+shader_parameter/palette_array_size = 3
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.755938, 0.609652, 0.468997, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_stsu3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_migvp")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_perh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qtqbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_p7dfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qtqbj")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_8ke6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_irydw")
+}],
+"loop": true,
+"name": &"stand",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_gt8d0"]
+font_size = 131
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_qtqbj"]
+font_size = 131
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gt8d0"]
+size = Vector2(1107.31, 2025.94)
+
+[sub_resource type="Curve2D" id="Curve2D_gt8d0"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2700, 0, -536.637, -8.86267, 536.637, 8.86267, 3394.48, -604.551, 0, 0, 0, 0, 3896, 825.517)
+}
+point_count = 4
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_migvp"]
+shader = ExtResource("8_migvp")
+shader_parameter/palette_array_size = 1
+shader_parameter/input_palette_array = PackedColorArray(0.521569, 0.521569, 0.521569, 1)
+shader_parameter/output_palette_array = PackedColorArray(0.523341, 0.46689, 0.513746, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cngje"]
+size = Vector2(1042.76, 1984.96)
+
+[node name="Main" type="Node2D"]
+
+[node name="guy2" type="Path2D" parent="."]
+position = Vector2(529.389, -101)
+scale = Vector2(0.201389, 0.201389)
+curve = SubResource("Curve2D_cngje")
+script = ExtResource("2_cngje")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="guy2"]
+rotates = false
+loop = false
+
+[node name="guyspr" type="AnimatedSprite2D" parent="guy2/PathFollow2D"]
+material = SubResource("ShaderMaterial_perh5")
+position = Vector2(-39.7241, -29.7931)
+scale = Vector2(1.3, 1.3)
+sprite_frames = SubResource("SpriteFrames_stsu3")
+animation = &"stand"
+
+[node name="ColorRect" type="TextureRect" parent="guy2/PathFollow2D"]
+offset_left = -682.207
+offset_top = -1488.41
+offset_right = 186.793
+offset_bottom = -688.413
+scale = Vector2(1.5, 1.5)
+mouse_filter = 2
+texture = ExtResource("9_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="guy2/PathFollow2D/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.083824
+anchor_top = 0.0543411
+anchor_right = 0.083824
+anchor_bottom = 0.0543411
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.716758, 0.716758)
+text = "john"
+label_settings = SubResource("LabelSettings_gt8d0")
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="lab1" type="Label" parent="guy2/PathFollow2D/ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.432661, 0.432661)
+text = "john"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="lab2" type="Label" parent="guy2/PathFollow2D/ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0799973
+anchor_top = 0.341379
+anchor_right = 0.56101
+anchor_bottom = 0.341379
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.432661, 0.432661)
+text = "john"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="lab3" type="Label" parent="guy2/PathFollow2D/ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0838067
+anchor_top = 0.453103
+anchor_right = 0.564819
+anchor_bottom = 0.453103
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.432661, 0.432661)
+text = "john"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D1" type="Sprite2D" parent="guy2/PathFollow2D/ColorRect"]
+visible = false
+position = Vector2(814.344, 168.827)
+scale = Vector2(1.66244, 2.25111)
+texture = ExtResource("10_p7dfi")
+
+[node name="det" type="Label" parent="guy2/PathFollow2D/ColorRect/Sprite2D1"]
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = -105.236
+offset_top = -32.1152
+offset_right = 545.6
+offset_bottom = 269.885
+scale = Vector2(0.215716, 0.168634)
+text = "+1 guy worth"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="guy2/PathFollow2D/ColorRect"]
+visible = false
+position = Vector2(860.689, 278.069)
+scale = Vector2(1.66244, 2.25111)
+texture = ExtResource("10_p7dfi")
+
+[node name="det" type="Label" parent="guy2/PathFollow2D/ColorRect/Sprite2D2"]
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = -109.218
+offset_top = -26.2331
+offset_right = 541.617
+offset_bottom = 275.767
+scale = Vector2(0.215716, 0.168634)
+text = "+1 guy worth"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="guy2/PathFollow2D/ColorRect"]
+visible = false
+position = Vector2(864, 400.552)
+scale = Vector2(1.66244, 2.25111)
+texture = ExtResource("10_p7dfi")
+
+[node name="det" type="Label" parent="guy2/PathFollow2D/ColorRect/Sprite2D3"]
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = -109.218
+offset_top = -26.2331
+offset_right = 541.617
+offset_bottom = 275.767
+scale = Vector2(0.215716, 0.168634)
+text = "+1 guy worth"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="guy2/PathFollow2D"]
+collision_priority = 1.32
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="guy2/PathFollow2D/Area2D"]
+position = Vector2(-27.3103, -485.375)
+shape = SubResource("RectangleShape2D_gt8d0")
+
+[node name="guy1" type="Path2D" parent="."]
+position = Vector2(210.389, -104)
+scale = Vector2(0.201389, 0.201389)
+curve = SubResource("Curve2D_gt8d0")
+script = ExtResource("2_cngje")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="guy1"]
+rotates = false
+loop = false
+
+[node name="guyspr" type="AnimatedSprite2D" parent="guy1/PathFollow2D"]
+material = SubResource("ShaderMaterial_migvp")
+position = Vector2(-59.5862, -9.93103)
+scale = Vector2(1.3, 1.3)
+sprite_frames = SubResource("SpriteFrames_stsu3")
+animation = &"stand"
+
+[node name="ColorRect" type="TextureRect" parent="guy1/PathFollow2D"]
+offset_left = -687.173
+offset_top = -1488.41
+offset_right = 181.827
+offset_bottom = -688.413
+scale = Vector2(1.5, 1.5)
+mouse_filter = 2
+texture = ExtResource("9_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="guy1/PathFollow2D/ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0801248
+anchor_top = 0.0543623
+anchor_right = 0.0801248
+anchor_bottom = 0.0543623
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.729781, 0.729781)
+text = "john"
+label_settings = SubResource("LabelSettings_gt8d0")
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="lab1" type="Label" parent="guy1/PathFollow2D/ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.432661, 0.432661)
+text = "john"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="lab2" type="Label" parent="guy1/PathFollow2D/ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0799973
+anchor_top = 0.341379
+anchor_right = 0.56101
+anchor_bottom = 0.341379
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.432661, 0.432661)
+text = "john"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="lab3" type="Label" parent="guy1/PathFollow2D/ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0838067
+anchor_top = 0.453103
+anchor_right = 0.564819
+anchor_bottom = 0.453103
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.432661, 0.432661)
+text = "john"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D1" type="Sprite2D" parent="guy1/PathFollow2D/ColorRect"]
+visible = false
+position = Vector2(814.344, 168.827)
+scale = Vector2(1.66244, 2.25111)
+texture = ExtResource("10_p7dfi")
+
+[node name="det" type="Label" parent="guy1/PathFollow2D/ColorRect/Sprite2D1"]
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = -105.236
+offset_top = -32.1152
+offset_right = 545.6
+offset_bottom = 269.885
+scale = Vector2(0.215716, 0.168634)
+text = "+1 guy worth"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="guy1/PathFollow2D/ColorRect"]
+visible = false
+position = Vector2(860.689, 278.069)
+scale = Vector2(1.66244, 2.25111)
+texture = ExtResource("10_p7dfi")
+
+[node name="det" type="Label" parent="guy1/PathFollow2D/ColorRect/Sprite2D2"]
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = -109.218
+offset_top = -26.2331
+offset_right = 541.617
+offset_bottom = 275.767
+scale = Vector2(0.215716, 0.168634)
+text = "+1 guy worth"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="guy1/PathFollow2D/ColorRect"]
+visible = false
+position = Vector2(864, 400.552)
+scale = Vector2(1.66244, 2.25111)
+texture = ExtResource("10_p7dfi")
+
+[node name="det" type="Label" parent="guy1/PathFollow2D/ColorRect/Sprite2D3"]
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = -109.218
+offset_top = -26.2331
+offset_right = 541.617
+offset_bottom = 275.767
+scale = Vector2(0.215716, 0.168634)
+text = "+1 guy worth"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Area2D" type="Area2D" parent="guy1/PathFollow2D"]
+collision_priority = 1.735
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="guy1/PathFollow2D/Area2D"]
+position = Vector2(-39.7239, -500.896)
+shape = SubResource("RectangleShape2D_cngje")
+
+[node name="land" type="Sprite2D" parent="."]
+z_index = -215
+position = Vector2(640, 232)
+scale = Vector2(0.55, 0.55)
+texture = ExtResource("9_perh5")
+
+[node name="Ship" parent="." instance=ExtResource("4_ftju0")]
+position = Vector2(480, 80)
+
+[node name="sky" type="Sprite2D" parent="."]
+z_index = -1680
+position = Vector2(552, 336)
+scale = Vector2(0.501017, 0.501017)
+texture = ExtResource("13_p7dfi")
+
+[node name="sky2" type="Sprite2D" parent="."]
+z_index = -4096
+position = Vector2(2032, 344)
+scale = Vector2(0.713228, 0.713228)
+texture = ExtResource("13_p7dfi")
+
+[connection signal="guy_added" from="guy2" to="Ship" method="_on_guy_2_guy_added"]
+[connection signal="input_event" from="guy2/PathFollow2D/Area2D" to="guy2" method="_on_area_2d_input_event"]
+[connection signal="mouse_shape_entered" from="guy2/PathFollow2D/Area2D" to="guy2" method="_on_area_2d_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="guy2/PathFollow2D/Area2D" to="guy2" method="_on_area_2d_mouse_shape_exited"]
+[connection signal="guy_added" from="guy1" to="Ship" method="_on_guy_1_guy_added"]
+[connection signal="input_event" from="guy1/PathFollow2D/Area2D" to="guy1" method="_on_area_2d_input_event"]
+[connection signal="mouse_shape_entered" from="guy1/PathFollow2D/Area2D" to="guy1" method="_on_area_2d_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="guy1/PathFollow2D/Area2D" to="guy1" method="_on_area_2d_mouse_shape_exited"]

@@ -1,0 +1,109 @@
+~ one
+can I stretch my legs? this position is super uncomfortable.
+- yes
+	everyone else might be less comfortable now though...
+	do golb.drain += 1
+- no
+	i'm outta here!
+	do golb.lose_guy.emit()
+do golb.paused = false
+=> END
+
+~ two
+i brought snacks for everyone! do you want some?
+- yes
+	nice!
+	do golb.health += golb.health_per_guy / 2
+- no
+	alright i guess
+do golb.paused = false
+=> END
+
+~ three
+the guys around me are terrible! should i give them a piece of my mind?
+- yes
+	they didn't seem to like my criticism...
+	do golb.health_per_guy -= 0.5
+- no
+	turns out they were actually pretty chill!
+	do golb.health_per_guy += 0.5
+do golb.paused = false
+=> END!
+
+~ four
+the guy next to me is super annoying. can i kick him off?
+- yes
+	thank god.
+	do golb.lose_guy.emit()
+	do golb.drain -= 0.5
+- no
+	i'm outta here!
+	do golb.lose_guy.emit()
+	do golb.drain += 0.5
+do golb.paused = false
+=> END!
+
+~ five
+i'm gonna start spitting on people.
+- yes
+	yessss they hate it so much hahahahhahaah
+	do golb.lose_guy.emit()
+- no
+	ok fine. but ill do it later.
+do golb.paused = false
+=> END!
+
+~ six
+my friends and i figured out a better way to sit, but it might be unstable. should we try it?
+- yes
+	it worked! the boat is much more stable now!
+	do golb.drain -= 0.5
+- no
+	okay, fair
+do golb.paused = false
+=> END
+
+~ seven
+can i play some games on my phone while we're moving?
+- yes
+	thanks man
+	do golb.health = golb.max_health
+- no
+	awww shucks
+do golb.paused = false
+=> END
+
+~ eight
+can i move closer to my friend?
+- yes
+	thanks!
+	do golb.drain += 0.5
+	do golb.health_per_guy += 0.2
+- no
+	oh......
+	do golb.health_per_guy -= 0.1
+do golb.paused = false
+=> END
+
+~ nine
+can we take a nap? just a couple of us.
+- yes
+	zzzzzzz....
+	do golb.health = golb.max_health
+	do golb.drain += 0.6
+- no
+	ok fine.
+	do golb.health_per_guy -= 0.5
+do golb.paused = false
+=> END
+
+~ ten
+am i more than just a boat part to you?
+- yes
+	i feel so valuable
+	do golb.health_per_guy += 0.5
+- no
+	i feel so not valuable
+	do golb.health_per_guy -= 1
+do golb.paused = false
+=> END

@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cxvrxxmrtsh0y"]
+
+[ext_resource type="Texture2D" uid="uid://c1ibodn2tlqj7" path="res://sprites/gameover1.png" id="1_dy3ie"]
+[ext_resource type="Texture2D" uid="uid://b2ubngkq2ruun" path="res://sprites/gameover2.png" id="2_2mkfd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h8i2o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dy3ie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2mkfd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Gameover" type="AnimatedSprite2D"]
+light_mask = 3
+visibility_layer = 3
+z_index = 4096
+position = Vector2(576, 328)
+sprite_frames = SubResource("SpriteFrames_h8i2o")
+autoplay = "default"
