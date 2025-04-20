@@ -444,6 +444,111 @@ position = Vector2(2032, 344)
 scale = Vector2(0.713228, 0.713228)
 texture = ExtResource("13_p7dfi")
 
+[node name="lab1" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.432661, 0.432661)
+text = "john"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="lab2" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.0799973
+anchor_top = 0.341379
+anchor_right = 0.56101
+anchor_bottom = 0.341379
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.432661, 0.432661)
+text = "john"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="lab3" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.0838067
+anchor_top = 0.453103
+anchor_right = 0.564819
+anchor_bottom = 0.453103
+offset_left = 139.034
+offset_top = 34.7586
+offset_right = 700.034
+offset_bottom = 336.759
+scale = Vector2(0.432661, 0.432661)
+text = "john"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D1" type="Sprite2D" parent="."]
+position = Vector2(814.344, 168.827)
+scale = Vector2(1.66244, 2.25111)
+texture = ExtResource("10_p7dfi")
+
+[node name="det" type="Label" parent="Sprite2D1"]
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = -105.236
+offset_top = -32.1152
+offset_right = 545.6
+offset_bottom = 269.885
+scale = Vector2(0.215716, 0.168634)
+text = "+1 guy worth"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(860.689, 278.069)
+scale = Vector2(1.66244, 2.25111)
+texture = ExtResource("10_p7dfi")
+
+[node name="det" type="Label" parent="Sprite2D2"]
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = -109.218
+offset_top = -26.2331
+offset_right = 541.617
+offset_bottom = 275.767
+scale = Vector2(0.215716, 0.168634)
+text = "+1 guy worth"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(864, 400.552)
+scale = Vector2(1.66244, 2.25111)
+texture = ExtResource("10_p7dfi")
+
+[node name="det" type="Label" parent="Sprite2D3"]
+anchors_preset = -1
+anchor_left = 0.0839655
+anchor_top = 0.221379
+anchor_right = 0.564978
+anchor_bottom = 0.221379
+offset_left = -109.218
+offset_top = -26.2331
+offset_right = 541.617
+offset_bottom = 275.767
+scale = Vector2(0.215716, 0.168634)
+text = "+1 guy worth"
+label_settings = SubResource("LabelSettings_qtqbj")
+metadata/_edit_use_anchors_ = true
+
 [connection signal="guy_added" from="guy2" to="Ship" method="_on_guy_2_guy_added"]
 [connection signal="input_event" from="guy2/PathFollow2D/Area2D" to="guy2" method="_on_area_2d_input_event"]
 [connection signal="mouse_shape_entered" from="guy2/PathFollow2D/Area2D" to="guy2" method="_on_area_2d_mouse_shape_entered"]
