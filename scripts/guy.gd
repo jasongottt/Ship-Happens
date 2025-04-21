@@ -31,11 +31,11 @@ func _ready():
 	guyAdded = false
 	golb.chosen = false;
 	randomize()
-	var numMods = 0
+	var numMods = 1
 	if (golb.level < 3):
-		numMods = randi_range(0, golb.level)
+		numMods = randi_range(1, golb.level)
 	else:
-		numMods = randi_range(0, 3)
+		numMods = randi_range(1, 3)
 	$PathFollow2D/ColorRect/Label.text = firstNames[randi() % firstNames.size()]
 	$PathFollow2D/guyspr.material.set_shader_parameter("output_palette_array", PackedColorArray([Color(randf(), randf(), randf(), 1)]));
 	for i in numMods:
