@@ -19,8 +19,6 @@ func _physics_process(delta):
 	if golb.gameover:
 		golb.paused = true
 		stats.cam.position = stats.cam.position.lerp(Vector2(576, 960), 3 * delta)
-		if !stats.cam.position.is_equal_approx(Vector2(576,960)):
-			get_tree().change_scene_to_file("res://scenes/gameover.tscn")
 		stats.hide()
 		
 	if (get_tree().get_current_scene().get_name() == "Ocean") && golb.health > 0 && !going && !golb.paused:
@@ -37,7 +35,7 @@ func _physics_process(delta):
 		redraw_guys()
 		guyfallin = false
 		$animPlay.play()
-	if going:
+	if going && !golb.gameover:
 		$actionTimer.set_paused(true)
 		stats.cam.position = stats.cam.position.lerp(Vector2(2000, 320), 3 * delta)
 		if stats.cam.position.distance_to(Vector2(2000, 320)) < 10.0:
