@@ -1,0 +1,1 @@
+Just a small game made in ~10 hours for a game jam! The theme was "friendship", so I came up with the idea to have the player sail on a LITERAL ship made out of their friends! The player must choose between people with conflicting personality traits, and make quick decisions based on arguments and questions their friends have while floating.
