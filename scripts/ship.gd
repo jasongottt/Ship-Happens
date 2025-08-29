@@ -48,6 +48,10 @@ func redraw_guys():
 		for i in range(1, golb.guyArr.size() + 1):
 			get_node("animPlay/RigidBody2D" + str(i) + "/john" + str(i)).material.set_shader_parameter("output_palette_array", golb.guyArr[i - 1].color)
 			get_node("animPlay/RigidBody2D" + str(i) + "/john" + str(i)).show()
+	else: 
+		for i in range(1, 21):
+			get_node("animPlay/RigidBody2D" + str(i) + "/john" + str(i)).material.set_shader_parameter("output_palette_array", golb.guyArr[i - 1].color)
+			get_node("animPlay/RigidBody2D" + str(i) + "/john" + str(i)).show()
 
 func _on_timer_timeout():
 	golb.level += 1
