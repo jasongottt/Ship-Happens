@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://c8465pl6amiel"]
+[gd_scene format=3 uid="uid://c8465pl6amiel"]
 
 [ext_resource type="Script" uid="uid://byv8hi1v0p8l6" path="res://scripts/guy.gd" id="2_cngje"]
 [ext_resource type="Texture2D" uid="uid://cquqhpa14fsf3" path="res://sprites/guyjump1.png" id="3_migvp"]
@@ -91,26 +91,26 @@ shader_parameter/output_palette_array = PackedColorArray(0.523341, 0.46689, 0.51
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cngje"]
 size = Vector2(1042.76, 1984.96)
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" unique_id=1494565306]
 
-[node name="guy2" type="Path2D" parent="."]
+[node name="guy2" type="Path2D" parent="." unique_id=1621679739]
 position = Vector2(529.389, -101)
 scale = Vector2(0.201389, 0.201389)
 curve = SubResource("Curve2D_cngje")
 script = ExtResource("2_cngje")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="guy2"]
+[node name="PathFollow2D" type="PathFollow2D" parent="guy2" unique_id=1482313711]
 rotates = false
 loop = false
 
-[node name="guyspr" type="AnimatedSprite2D" parent="guy2/PathFollow2D"]
+[node name="guyspr" type="AnimatedSprite2D" parent="guy2/PathFollow2D" unique_id=1776056956]
 material = SubResource("ShaderMaterial_perh5")
 position = Vector2(-39.7241, -29.7931)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_stsu3")
 animation = &"stand"
 
-[node name="ColorRect" type="TextureRect" parent="guy2/PathFollow2D"]
+[node name="ColorRect" type="TextureRect" parent="guy2/PathFollow2D" unique_id=1140444205]
 offset_left = -682.207
 offset_top = -1488.41
 offset_right = 186.793
@@ -120,7 +120,7 @@ mouse_filter = 2
 texture = ExtResource("9_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="guy2/PathFollow2D/ColorRect"]
+[node name="Label" type="Label" parent="guy2/PathFollow2D/ColorRect" unique_id=1254952994]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.083824
@@ -137,7 +137,7 @@ label_settings = SubResource("LabelSettings_gt8d0")
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="lab1" type="Label" parent="guy2/PathFollow2D/ColorRect"]
+[node name="lab1" type="Label" parent="guy2/PathFollow2D/ColorRect" unique_id=1417731682]
 visible = false
 layout_mode = 1
 anchors_preset = -1
@@ -154,7 +154,7 @@ text = "john"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="lab2" type="Label" parent="guy2/PathFollow2D/ColorRect"]
+[node name="lab2" type="Label" parent="guy2/PathFollow2D/ColorRect" unique_id=612746513]
 visible = false
 layout_mode = 1
 anchors_preset = -1
@@ -171,7 +171,7 @@ text = "john"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="lab3" type="Label" parent="guy2/PathFollow2D/ColorRect"]
+[node name="lab3" type="Label" parent="guy2/PathFollow2D/ColorRect" unique_id=643718409]
 visible = false
 layout_mode = 1
 anchors_preset = -1
@@ -188,13 +188,13 @@ text = "john"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Sprite2D1" type="Sprite2D" parent="guy2/PathFollow2D/ColorRect"]
+[node name="Sprite2D1" type="Sprite2D" parent="guy2/PathFollow2D/ColorRect" unique_id=1194014105]
 visible = false
 position = Vector2(814.344, 168.827)
 scale = Vector2(1.66244, 2.25111)
 texture = ExtResource("10_p7dfi")
 
-[node name="det" type="Label" parent="guy2/PathFollow2D/ColorRect/Sprite2D1"]
+[node name="det" type="Label" parent="guy2/PathFollow2D/ColorRect/Sprite2D1" unique_id=1418916283]
 anchors_preset = -1
 anchor_left = 0.0839655
 anchor_top = 0.221379
@@ -209,13 +209,13 @@ text = "+1 guy worth"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Sprite2D2" type="Sprite2D" parent="guy2/PathFollow2D/ColorRect"]
+[node name="Sprite2D2" type="Sprite2D" parent="guy2/PathFollow2D/ColorRect" unique_id=1895484393]
 visible = false
 position = Vector2(860.689, 278.069)
 scale = Vector2(1.66244, 2.25111)
 texture = ExtResource("10_p7dfi")
 
-[node name="det" type="Label" parent="guy2/PathFollow2D/ColorRect/Sprite2D2"]
+[node name="det" type="Label" parent="guy2/PathFollow2D/ColorRect/Sprite2D2" unique_id=718352261]
 anchors_preset = -1
 anchor_left = 0.0839655
 anchor_top = 0.221379
@@ -230,13 +230,13 @@ text = "+1 guy worth"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Sprite2D3" type="Sprite2D" parent="guy2/PathFollow2D/ColorRect"]
+[node name="Sprite2D3" type="Sprite2D" parent="guy2/PathFollow2D/ColorRect" unique_id=951402875]
 visible = false
 position = Vector2(864, 400.552)
 scale = Vector2(1.66244, 2.25111)
 texture = ExtResource("10_p7dfi")
 
-[node name="det" type="Label" parent="guy2/PathFollow2D/ColorRect/Sprite2D3"]
+[node name="det" type="Label" parent="guy2/PathFollow2D/ColorRect/Sprite2D3" unique_id=59738804]
 anchors_preset = -1
 anchor_left = 0.0839655
 anchor_top = 0.221379
@@ -251,31 +251,31 @@ text = "+1 guy worth"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="guy2/PathFollow2D"]
+[node name="Area2D" type="Area2D" parent="guy2/PathFollow2D" unique_id=399466989]
 collision_priority = 1.32
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="guy2/PathFollow2D/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="guy2/PathFollow2D/Area2D" unique_id=220995492]
 position = Vector2(-27.3103, -485.375)
 shape = SubResource("RectangleShape2D_gt8d0")
 
-[node name="guy1" type="Path2D" parent="."]
+[node name="guy1" type="Path2D" parent="." unique_id=127281828]
 position = Vector2(210.389, -104)
 scale = Vector2(0.201389, 0.201389)
 curve = SubResource("Curve2D_gt8d0")
 script = ExtResource("2_cngje")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="guy1"]
+[node name="PathFollow2D" type="PathFollow2D" parent="guy1" unique_id=2119094067]
 rotates = false
 loop = false
 
-[node name="guyspr" type="AnimatedSprite2D" parent="guy1/PathFollow2D"]
+[node name="guyspr" type="AnimatedSprite2D" parent="guy1/PathFollow2D" unique_id=1672990736]
 material = SubResource("ShaderMaterial_migvp")
 position = Vector2(-59.5862, -9.93103)
 scale = Vector2(1.3, 1.3)
 sprite_frames = SubResource("SpriteFrames_stsu3")
 animation = &"stand"
 
-[node name="ColorRect" type="TextureRect" parent="guy1/PathFollow2D"]
+[node name="ColorRect" type="TextureRect" parent="guy1/PathFollow2D" unique_id=1001370891]
 offset_left = -687.173
 offset_top = -1488.41
 offset_right = 181.827
@@ -285,7 +285,7 @@ mouse_filter = 2
 texture = ExtResource("9_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="guy1/PathFollow2D/ColorRect"]
+[node name="Label" type="Label" parent="guy1/PathFollow2D/ColorRect" unique_id=1485685500]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0801248
@@ -302,7 +302,7 @@ label_settings = SubResource("LabelSettings_gt8d0")
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="lab1" type="Label" parent="guy1/PathFollow2D/ColorRect"]
+[node name="lab1" type="Label" parent="guy1/PathFollow2D/ColorRect" unique_id=28606618]
 visible = false
 layout_mode = 1
 anchors_preset = -1
@@ -319,7 +319,7 @@ text = "john"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="lab2" type="Label" parent="guy1/PathFollow2D/ColorRect"]
+[node name="lab2" type="Label" parent="guy1/PathFollow2D/ColorRect" unique_id=355349628]
 visible = false
 layout_mode = 1
 anchors_preset = -1
@@ -336,7 +336,7 @@ text = "john"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="lab3" type="Label" parent="guy1/PathFollow2D/ColorRect"]
+[node name="lab3" type="Label" parent="guy1/PathFollow2D/ColorRect" unique_id=728626126]
 visible = false
 layout_mode = 1
 anchors_preset = -1
@@ -353,13 +353,13 @@ text = "john"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Sprite2D1" type="Sprite2D" parent="guy1/PathFollow2D/ColorRect"]
+[node name="Sprite2D1" type="Sprite2D" parent="guy1/PathFollow2D/ColorRect" unique_id=1323545372]
 visible = false
 position = Vector2(814.344, 168.827)
 scale = Vector2(1.66244, 2.25111)
 texture = ExtResource("10_p7dfi")
 
-[node name="det" type="Label" parent="guy1/PathFollow2D/ColorRect/Sprite2D1"]
+[node name="det" type="Label" parent="guy1/PathFollow2D/ColorRect/Sprite2D1" unique_id=1321777397]
 anchors_preset = -1
 anchor_left = 0.0839655
 anchor_top = 0.221379
@@ -374,13 +374,13 @@ text = "+1 guy worth"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Sprite2D2" type="Sprite2D" parent="guy1/PathFollow2D/ColorRect"]
+[node name="Sprite2D2" type="Sprite2D" parent="guy1/PathFollow2D/ColorRect" unique_id=892080651]
 visible = false
 position = Vector2(860.689, 278.069)
 scale = Vector2(1.66244, 2.25111)
 texture = ExtResource("10_p7dfi")
 
-[node name="det" type="Label" parent="guy1/PathFollow2D/ColorRect/Sprite2D2"]
+[node name="det" type="Label" parent="guy1/PathFollow2D/ColorRect/Sprite2D2" unique_id=1728478117]
 anchors_preset = -1
 anchor_left = 0.0839655
 anchor_top = 0.221379
@@ -395,13 +395,13 @@ text = "+1 guy worth"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Sprite2D3" type="Sprite2D" parent="guy1/PathFollow2D/ColorRect"]
+[node name="Sprite2D3" type="Sprite2D" parent="guy1/PathFollow2D/ColorRect" unique_id=797779069]
 visible = false
 position = Vector2(864, 400.552)
 scale = Vector2(1.66244, 2.25111)
 texture = ExtResource("10_p7dfi")
 
-[node name="det" type="Label" parent="guy1/PathFollow2D/ColorRect/Sprite2D3"]
+[node name="det" type="Label" parent="guy1/PathFollow2D/ColorRect/Sprite2D3" unique_id=309004099]
 anchors_preset = -1
 anchor_left = 0.0839655
 anchor_top = 0.221379
@@ -416,29 +416,29 @@ text = "+1 guy worth"
 label_settings = SubResource("LabelSettings_qtqbj")
 metadata/_edit_use_anchors_ = true
 
-[node name="Area2D" type="Area2D" parent="guy1/PathFollow2D"]
+[node name="Area2D" type="Area2D" parent="guy1/PathFollow2D" unique_id=731060329]
 collision_priority = 1.735
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="guy1/PathFollow2D/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="guy1/PathFollow2D/Area2D" unique_id=1652046970]
 position = Vector2(-39.7239, -500.896)
 shape = SubResource("RectangleShape2D_cngje")
 
-[node name="land" type="Sprite2D" parent="."]
+[node name="land" type="Sprite2D" parent="." unique_id=373103592]
 z_index = -215
 position = Vector2(640, 232)
 scale = Vector2(0.55, 0.55)
 texture = ExtResource("9_perh5")
 
-[node name="Ship" parent="." instance=ExtResource("4_ftju0")]
+[node name="Ship" parent="." unique_id=140276934 instance=ExtResource("4_ftju0")]
 position = Vector2(480, 80)
 
-[node name="sky" type="Sprite2D" parent="."]
+[node name="sky" type="Sprite2D" parent="." unique_id=360169852]
 z_index = -1680
 position = Vector2(552, 336)
 scale = Vector2(0.501017, 0.501017)
 texture = ExtResource("13_p7dfi")
 
-[node name="sky2" type="Sprite2D" parent="."]
+[node name="sky2" type="Sprite2D" parent="." unique_id=1692936631]
 z_index = -4096
 position = Vector2(2032, 344)
 scale = Vector2(0.713228, 0.713228)
